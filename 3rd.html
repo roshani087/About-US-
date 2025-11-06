@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Urgent Case</title>
+  <style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 40px 60px;
+  color: #222;
+}
+
+.featured-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-section h2 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+/* CARD STYLES  */
+.case-card {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  border: 1px solid #d9e0eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* IMAGE SECTION */
+.case-image {
+  background-color: #d9d9d9;
+}
+
+.case-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTENT SECTION */
+.case-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #d9e0eb;
+}
+
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.case-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.status {
+  font-size: 14px;
+  color: #888;
+}
+
+.description {
+  color: #666;
+  font-size: 15px;
+  margin: 10px 0 15px;
+  line-height: 1.6;
+}
+
+.attention {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 10px 0;
+  color: #111;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.progress {
+  background-color: #1a237e;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #444;
+}
+
+
+.case-card:hover {
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+/*  RESPONSIVE DESIGN  */
+@media (max-width: 900px) {
+  .case-card {
+    grid-template-columns: 1fr;
+  }
+
+  .case-image {
+    height: 280px;
+  }
+
+  .case-content {
+    border-left: none;
+    border-top: 1px solid #d9e0eb;
+    padding: 20px;
+  }
+
+  .case-header h3 {
+    font-size: 18px;
+  }
+
+  .attention {
+    font-size: 15px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .featured-section h2 {
+    font-size: 18px;
+  }
+
+  .case-content {
+    padding: 18px;
+  }
+
+  .progress-bar {
+    height: 6px;
+  }
+
+  .progress-info {
+    font-size: 12px;
+  }
+}
+</style>
+</head>
+<body>
+  <section class="featured-section">
+    <h2>FEATURED URGENT CASE</h2>
+
+    <div class="case-card">
+      <div class="case-image">
+        <img src="image copy.png" alt="Patient Image">
+      </div>
+
+      <div class="case-content">
+        <div class="case-header">
+          <h3>Sita Rai</h3>
+          <span class="status">Status</span>
+        </div>
+
+        <p class="description">Sita Rai is currently undergoing treatment and requires urgent financial assistance to continue her medical care.</p>
+
+        <p class="attention">Requires urgent medical attention</p>
+
+        <div class="progress-bar">
+          <div class="progress" style="width: 60%;"></div>
+        </div>
+
+        <div class="progress-info">
+          <span>Raised 1.5 lakhs</span>
+          <span>Goal: 2.5 lakhs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
